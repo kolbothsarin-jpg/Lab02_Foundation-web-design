@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Profile Card</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 10;
+        }
+
+        
+        .card {
+            width: 500px;
+            padding: 50px;
+            text-align: center;
+            border: 1px solid #4a90e2;
+            box-shadow: 0 4px 10px #ddd;
+        }
+
+        
+        .profile-img {
+            width: 280px;
+            height: 195px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+
+        
+        .bio {
+            color: rgb(132, 71, 34);
+            font-size: 12px;
+        }
+
+        
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0;
+        }
+
+        .info div {
+            width: 33.33%;
+        }
+
+        .info h4 {
+            color: gray;
+            font-size: 11px;
+            font-weight: normal;
+        }
+
+        .info p {
+            font-size: 14px;
+        }
+
+        
+        .social-icons {
+            margin: 20px 0;
+        }
+
+        .social-icons span {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 50%;
+            background-color: #4285f4;
+            color: white;
+            margin: 0 4px;
+            font-size: 12px;
+        }
+
+        
+        button {
+            background-color: rgb(226, 227, 235);
+            color: gray;
+            border: 1px solid #ddd;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        
+        button:hover {
+            background-color: #daaf23;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="photo_1.jpg" alt="Profile Picture" class="profile-img">
+
+        <h2>SARIN HENGKOLBOTH</h2>
+
+        <p class="bio">
+            Hello! I am a sophomore learning  Data Science at CADT.
+
+        <div class="info">
+            <div>
+                <h4>Projects</h4>
+                <p>5</p>
+            </div>
+
+            <div>
+                <h4>Following</h4>
+                <p>120</p>
+            </div>
+
+            <div>
+                <h4>Followers</h4>
+                <p>200</p>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <span>♥</span>
+            <span>f</span>
+            <span>G+</span>
+        </div>
+
+        <button onclick="alert('Welcome to my profile!')">
+            View Profile
+        </button>
+
+    </div>
+
+</body>
+
+</html>
