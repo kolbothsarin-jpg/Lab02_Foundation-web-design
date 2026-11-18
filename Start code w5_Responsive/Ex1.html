@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            display: grid;
+            grid-template-columns: repeat(4 ,1fr);
+            background-color:white; 
+            gap: 5px;
+        }
+        .item{
+            display:flex;
+            justify-content: center;
+            background-color: rgb(199, 232, 232);
+            font-size:13px ;
+        }
+        @media(max-width: 1000px) {
+            .boxes{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media(max-width: 768px){
+            .boxes{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+         @media(max-width: 480px){
+            .boxes{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="item">Iteam 1</div>
+        <div class="item">Iteam 2</div>
+        <div class="item">Iteam 3</div>
+        <div class="item">Iteam 4</div>
+        <div class="item">Iteam 5</div>
+        <div class="item">Iteam 6</div>
+        <div class="item">Iteam 7</div>
+        <div class="item">Iteam 8</div>
+    </div>
+</body>
+</html>

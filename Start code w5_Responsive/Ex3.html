@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .header{
+            display: flex;
+            background-color: rgb(30, 30, 30);
+            color: white;
+            justify-content:  center;
+            padding: 15px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px 10px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgb(208, 207, 207);
+        }
+        .slidebar{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(66, 66, 65);
+            padding: 10px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: black;
+            padding: 15px;
+        }
+     @media(min-width: 600px) and (max-width: 900px) {
+        .main {
+            flex-direction: row;
+        }
+
+        .content {
+            flex: 2;
+        }
+
+        .slidebar {
+            flex: 1;
+        }
+
+        .header,
+        .footer {
+            padding: 20px;
+        }
+    }
+    @media (min-width: 900px) {
+    .main {
+        flex-direction: row;
+    }
+    .content {
+        flex: 3;
+    }
+    .slidebar {
+        flex: 1;
+    }
+    .header,
+    .footer {
+        padding: 25px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Responsive Header</div>
+        <div class="main">
+            <div class="content">Main Content</div>
+            <div class="slidebar">Slidebar</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

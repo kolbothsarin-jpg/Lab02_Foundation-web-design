@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .nav{
+            display:flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgb(31, 29, 29);
+        }
+        .logo{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:aliceblue
+        }
+        .right_section{
+            display: flex;
+            gap: 30px;
+        }
+        .box{
+            color: aliceblue;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .fa-bars{
+            display: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        @media(max-width: 768px){
+            .right_section{
+                display: none;
+                
+            }
+            .fa-bars{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Logo</div>
+        <div class="right_section">
+            <div class = "box">Home</div>
+            <div class = "box">About</div>
+            <div class = "box">Services</div>
+            <div class = "box">Services</div>
+            <div class = "box">Contact</div>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</body>
+</html>

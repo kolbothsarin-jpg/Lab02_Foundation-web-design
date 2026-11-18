@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #568596;
+            font-family: Arial;
+
+        }
+        .form {
+            background-color: white;
+            width: 680px;
+            max-width: 95%;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .form-header {
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ddd;
+            padding: 5px 20px;
+        }
+        h2 {
+            text-align: center;
+            color: gray;
+            margin: 0;
+        }
+        .form-body {
+            padding: 25px 40px 10px;
+        }
+        .form-footer {
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            padding: 10px 40px;
+            text-align: right;
+        }
+        .row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+        .sub_head {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 0;
+        }
+        label,
+        .label {
+            color: #13b99a;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            color: #ccc;
+        }
+        textarea {
+            height: 90px;
+            resize: vertical;
+        }
+        .options {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px 6px;
+            font-size: 16px;
+            color: #555;
+        }
+        .options label {
+            color: #555;
+            font-weight: normal;
+            font-size: 16px;
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .slider-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input[type="range"] {
+            flex: 1;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 6px;
+            border-radius: 3px;
+            background: #ccc;
+            outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: white;
+            border: 1px solid #888;
+            cursor: pointer;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: white;
+            border: 1px solid #888;
+            cursor: pointer;
+        }
+        .badge {
+            background-color: #13b99a;
+            color: white;
+            font-weight: bold;
+            padding: 6px 10px;
+            border-radius: 4px;
+            min-width: 48px;
+            text-align: center;
+        }
+        input[type="file"] {
+            font-size: 16px;
+            color: #555;
+        }
+        button {
+            background-color: #13b99a;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0e9a80;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="form-header">
+            <h2>Create Account</h2>
+        </div>
+        <form>
+            <div class="form-body">
+                <div class="row">
+                    <div class="sub_head">
+                        <label for="first">First name *</label>
+                        <input id="first" type="text" placeholder="enter your first name">
+                    </div>
+                    <div class="sub_head">
+                        <label for="last">Last name</label>
+                        <input id="last" type="text" placeholder="enter your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sub_head">
+                        <label for="email">Email*</label>
+                        <input id="email" type="email" placeholder="enter your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sub_head">
+                        <label for="pw">Password *</label>
+                        <input id="pw" type="password" placeholder="enter your password">
+                    </div>
+                    <div class="sub_head">
+                        <label for="pw2">Confirm Password *</label>
+                        <input id="pw2" type="password" placeholder="enter your password again">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sub_head">
+                        <span class="label">Gender:</span>
+                        <div class="options">
+                            <label><input type="radio" name="gender"> Male</label>
+                            <label><input type="radio" name="gender"> Female</label>
+                        </div>
+                    </div>
+                    <div class="sub_head">
+                        <span class="label">Hobbies</span>
+                        <div class="options">
+                            <label><input type="checkbox"> Music</label>
+                            <label><input type="checkbox"> Sports</label>
+                            <label><input type="checkbox"> Travel</label>
+                            <label><input type="checkbox"> Movies</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sub_head">
+                        <label for="source">Source of Income</label>
+                        <select id="source">
+                            <option>Employed</option>
+                            <option>Business</option>
+                            <option>Student</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="sub_head">
+                        <label for="income">Income</label>
+                        <div class="slider-row">
+                            <input id="income" type="range" min="0" max="100000" step="1000" value="20000">
+                            <span class="badge" id="income-value">20K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sub_head">
+                        <label for="photo">Upload Profile Picture</label>
+                        <input id="photo" type="file">
+                    </div>
+                    <div class="sub_head">
+                        <label for="age">Age</label>
+                        <input id="age" type="number" value="18">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sub_head">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-footer">
+                <button type="submit">Create</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
